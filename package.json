@@ -12,7 +12,6 @@
   "author": "Eliasib Toris",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
     "express": "^4.17.2",
     "inquirer": "^8.2.0"
   },

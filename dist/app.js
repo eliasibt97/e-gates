@@ -6,22 +6,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const Gates_1 = require("./gates/Gates");
 const bool_1 = require("./utils/bool");
+const method_1 = require("./middleware/method");
 const app = (0, express_1.default)();
 const port = 3000;
 const gates = new Gates_1.Gates();
 app.get('/:gate/:input_one/:input_two', (req, res, next) => {
     const gate = req.params.gate;
-    if (!gates[gate]) {
-        res.send({
-            success: false,
-            message: 'No method allowed',
-            output: null
-        }).status(500);
-        throw {
-            success: false,
-            message: 'No method allowed',
-            output: null
-        };
+    if ((0, method_1.validateMethod)(gate)) {
+        throw 'Method not allowed';
     }
     next();
 }, (req, res) => {
