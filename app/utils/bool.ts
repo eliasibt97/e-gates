@@ -1,0 +1,1 @@
+export const getBoolValue = (value: string): boolean => value === 'true' ? true : false;
