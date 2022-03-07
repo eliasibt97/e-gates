@@ -4,7 +4,7 @@ import { getBoolValue } from './utils/bool';
 import { validateMethod } from './middleware/method';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const gates:any = new Gates();
 
 app.get('/:gate/:input_one/:input_two', (req, res, next) => {
