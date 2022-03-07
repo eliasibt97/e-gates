@@ -27,6 +27,9 @@ app.get('/:gate/:input_one/:input_two', (req, res, next) => {
         output: gates[gate](inputs)
     });
 });
+app.get('/', (req, res) => {
+    res.send("Welcome to e-gates, the most quickly way to learn about logic gates.\n By: Eliasib Toris (eliasibt97@gmail.com)");
+});
 app.listen(port, () => {
     console.log(`Express Server is listening on port ${port}`);
 });

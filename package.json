@@ -1,13 +1,14 @@
 {
-  "name": "logic-gates",
+  "name": "e-gates",
   "version": "1.0.0",
-  "description": "Console APP to learn about electrónic logic gates",
+  "description": "Console APP to learn about logic gates",
   "main": "./dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "app": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "prepare": "tsc --build --clean && tsc --build"
   },
   "author": "Eliasib Toris",
   "license": "ISC",
