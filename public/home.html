@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+    <title>E-Gates</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Welcome to E-Gates!</h3>
+
+        <p>
+            <strong>What is e-Gates?</strong> e-Gates is a easy way to learn and understad how the logic gates work. <br>
+            In addittion, e-Gates is an API! You will be able to make <strong>GET</strong> requests using your web browser or PostMan. <br> <br>
+            
+            <strong>How can i use it?</strong> You can add the necessary paramethers to the main URL (https://e-gates.herokuapp.com), adding the gate name followeb by the inputs. Each gate can allow two inputs.
+        </p>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xsm-12" id="gates">
+                <p><strong>Allowed Logic Gates</strong></p>
+                <ul>
+                    <li>AND</li>
+                    <li>NAND</li>
+                    <li>OR</li>
+                    <li>NOR</li>
+                    <li>XOR</li>
+                    <li>NOT</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xsm-12" id="inputs">
+                <p><strong>Allowed Inputs</strong></p>
+                <ul>
+                    <li>ON</li>
+                    <li>TRUE</li>
+                    <li>1</li>
+                    <li>FALSE</li>
+                    <li>OFF</li>
+                    <li>O (Zero)</li>
+                </ul>
+            </div>
+        </div>
+        <p>For example, if you want to know how the XOR gate works you can add <strong>/XOR/ON/OFF</strong>: <br><a href="https://e-gates.herokuapp.com/XOR/ON/OFF">https://e-gates.herokuapp.com/XOR/ON/OFF</a></p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
