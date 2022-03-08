@@ -4,7 +4,7 @@ exports.validateMethod = void 0;
 const Gates_1 = require("../gates/Gates");
 const validateMethod = (gate) => {
     const gates = new Gates_1.Gates();
-    if (!gates[gate])
+    if (!gates[gate.toLowerCase()])
         return true;
     return false;
 };
