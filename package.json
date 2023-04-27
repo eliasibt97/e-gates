@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "start": "node ./dist/app.js",
+    "start": "node ./dist/index.js",
     "prepare": "tsc --build --clean && tsc --build"
   },
   "author": "Eliasib Toris",
